@@ -2,20 +2,21 @@
 
 ## Overview
 
-Welcome to **Challenge 1** in the **180 Degrees Consulting – Machine Learning Special Interest Group Recruitment Challenge**!
+Welcome to the **180 Degrees Consulting – Machine Learning SIG Recruitment Challenge!**
 
-Your mission: create a **two-stage ML pipeline** that:
+This is **Challenge 1** of the recruitment process.
+Your task is to design and implement a **two-stage machine learning pipeline** that:
 
 1. **Denoises** noisy flower images, and
-2. **Classifies** them into their correct categories.
+2. **Classifies** them into the correct category.
 
-This challenge assesses your ability to preprocess, model, and evaluate noisy real-world-like data in a clean, reproducible way.
+This challenge will assess your skills in image preprocessing, noise removal, and building classification models that can work effectively on degraded data.
 
 ---
 
 ## The Task
 
-You will work with images from five flower categories:
+You are provided with a dataset of five flower categories:
 
 * **Daisy**
 * **Dandelion**
@@ -23,33 +24,32 @@ You will work with images from five flower categories:
 * **Sunflowers**
 * **Tulips**
 
-### Dataset Composition:
+**Dataset contents**:
 
-* **Training set** – Contains **paired noisy and clean images**, grouped by class. Ideal for supervised denoising.
-* **Test set** – Contains only **noisy images**, randomly ordered and unlabeled.
+* **Training set** – Contains paired **noisy** and **clean** images, organized by class.
+* **Test set** – Contains only **noisy** images, randomly ordered, without clean references.
 
 ---
 
-## Objectives
+## Your Objective
 
 1. **Stage 1 – Denoising**
 
-   * Train a denoising model using the noisy-clean paired training data.
-   * Apply it to the test set to produce a directory:
-     **`Denoised_Images/`**.
+   * Train a denoising model using the noisy and clean training images.
+   * Apply it to the test set and save the results in a folder named **`Denoised_Images`**.
 
 2. **Stage 2 – Classification**
 
-   * Train your classifier using the clean training images.
-   * Use it to assign labels to images in **`Denoised_Images/`**.
+   * Train a classifier using the clean training images.
+   * Classify the denoised test images into one of the five flower categories.
 
 3. **Evaluation**
 
-   * Compute **PSNR** and **SSIM** metrics on the test set **before** and **after** denoising.
+   * Calculate **PSNR** and **SSIM** for the test images **before** and **after** denoising.
 
 4. **Submission File**
 
-   * Create `test_labels.csv` formatted like:
+   * Create a CSV file named **`test_labels.csv`** with this format:
 
      ```
      Images,Predicted_Classes
@@ -58,7 +58,7 @@ You will work with images from five flower categories:
      ...
      ```
 
-     Class mapping:
+     Class label mapping:
 
      * `1` = Daisy
      * `2` = Dandelion
@@ -70,50 +70,51 @@ You will work with images from five flower categories:
 
 ## Rules
 
-* Use only the provided training dataset for denoising and classification.
-* Only apply your denoising model to the test images—no other alterations allowed.
-* Your outputs (**`Denoised_Images/`**, evaluation metrics, and `test_labels.csv`) must be reproducible.
+* You must train using only the provided training dataset.
+* Test set images can only be modified through your denoising model.
+* Your outputs (`Denoised_Images/`, evaluation metrics, and `test_labels.csv`) must be reproducible from your submitted code.
 
 ---
 
 ## Additional Requirement – Approach Report
 
-Submit a **1–2 page report** detailing:
+Along with your submission, prepare a **1–2 page report** describing:
 
-* Your denoising strategy
-* Your classification model
-* Key architectural and preprocessing decisions
-* Evaluation observations (including PSNR & SSIM)
-* Challenges you encountered and how you addressed them
+* Your denoising method
+* Your classification approach
+* Key design decisions
+* Observations from evaluation metrics
+* Challenges faced and how you overcame them
+
+The report should be clear, concise, and demonstrate your understanding of the problem.
 
 ---
 
 ## Resources
 
-These are suggested references to inspire your approach—not direct solutions:
+Here are some references to guide your thinking (not exact solutions):
 
 * **Research Papers**
 
-  * *Denoising Autoencoders* by Vincent et al. (2008)
-  * *Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising* by Zhang et al. (2017)
+  * [Denoising Autoencoders](https://doi.org/10.1109/CVPR.2008.4580859) – Vincent et al., 2008
+  * [Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising](https://arxiv.org/abs/1608.03981) – Zhang et al., 2017
 
-* **YouTube Tutorials**
+* **YouTube Video**
 
-[Image Denoising with Autoencoders (Brilliant tutorial)](https://www.youtube.com/watch?v=0V96wE7lY4w&utm_source=chatgpt.com)
+  * [Image Denoising with Autoencoders]([https://www.youtube.com/watch?v=9z8o9vRX6xI](https://youtu.be/0V96wE7lY4w?si=qsHZTSLiAOX41mAh))
 
 ---
 
 ## Deliverables
 
-1. **`Denoised_Images/`** – denoised test set.
-2. **Evaluation report** – PSNR & SSIM before and after denoising.
-3. **`test_labels.csv`** – your final submission file.
-4. **Approach Report** – 1–2 page description of your solution.
+1. **`Denoised_Images/`** – denoised test images.
+2. **Evaluation Metrics** – PSNR & SSIM before and after denoising.
+3. **`test_labels.csv`** – final submission file.
+4. **Approach Report** – 1–2 pages detailing your solution.
 
 ---
 
 ## Submission
 
-Submit your `test_labels.csv` to the Kaggle competition:
-
+Submit your **`test_labels.csv`** to the Kaggle competition:
 [**180-DC ML SIG Recruitment Challenge on Kaggle**](https://www.kaggle.com/competitions/180-dc-ml-sig-recruitment)
