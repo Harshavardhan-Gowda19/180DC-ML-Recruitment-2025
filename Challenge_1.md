@@ -1,4 +1,4 @@
-# 180DC ML SIG Recruitment Challenge – **Challenge 1**: Image Denoising &  Classification
+# 180DC ML SIG Recruitment Challenges – **Challenge 1**: Image Denoising &  Classification
 
 ## Overview
 
@@ -96,8 +96,9 @@ Here are some references to guide your thinking (not exact solutions):
 
 * **Research Papers**
 
-  * [Denoising Autoencoders](https://doi.org/10.1109/CVPR.2008.4580859) – Vincent et al., 2008
-  * [Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising](https://arxiv.org/abs/1608.03981) – Zhang et al., 2017
+  * [Denoising Autoencoders](https://doi.org/10.48550/arXiv.1305.6663) – Vincent et al., 2008
+  * [Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising](
+https://doi.org/10.48550/arXiv.1608.03981) – Zhang et al., 2017
 
 * **YouTube Video**
 
