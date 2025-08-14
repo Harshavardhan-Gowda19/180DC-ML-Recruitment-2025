@@ -1,75 +1,81 @@
-# Challenge 2 — Domain Jargon Simplification
+## Challenge 2 — Domain Jargon Simplification
 
-## Overview
+### Overview
 
-In many professional fields — such as medicine, law, and technology — texts are filled with jargon that can be difficult for the general public to understand. This challenge is to design an AI system that can take jargon-heavy sentences and rewrite them into **plain, everyday English** while preserving their original meaning.
+Professional domains—such as medicine, law, and technology—often employ specialized jargon that poses a challenge for general audiences. In this challenge, you'll build an AI system capable of translating such jargon-heavy sentences into **clear, plain English**—retaining their original meaning.
 
-This task mirrors real-world applications in accessibility, public communication, and education, where clarity is essential without sacrificing accuracy.
-
----
-
-## Task
-
-Your goal is to build a system that:
-
-1. **Identifies** complex or uncommon words and phrases in a sentence.
-2. **Replaces** them with simpler, more common alternatives.
-3. **Produces** a rewritten sentence that is easier for a layperson to understand while keeping the meaning intact.
+This has real-world impact in areas like **education**, **legal transparency**, and **public communication**, where making complex ideas accessible is vital.
 
 ---
 
-## Dataset Creation
+### Task
 
-You will **create your own dataset** by collecting real-world jargon-heavy sentences from the internet.
-Examples of sources:
+Design a **non–neural network** pipeline that:
 
-* Medical research abstracts
-* Legal documents
-* Technical product manuals
-* Academic articles in any field
+1. **Identifies** complex or uncommon terms and phrases.
+2. **Substitutes** them with simpler, more familiar alternatives.
+3. **Produces** a rewritten sentence in plain English without changing the original meaning.
 
-Each row of your dataset should contain:
+**Important Constraint:**
+🚫 You **cannot** use deep learning or neural network–based models (e.g., BERT, GPT, LSTMs, Transformers).
+✅ You **can** use:
 
-* **Original** — the jargon-heavy sentence
-* **Simplified** — your rewritten plain-English version of that sentence
-
-**Note:** Ensure the simplified version is **meaning-preserving** and free of grammatical errors.
+* Classical machine learning models (e.g., decision trees, SVMs, Naive Bayes)
+* Rule-based systems
+* Dictionary/lexicon lookups (e.g., WordNet, custom synonym lists)
+* Statistical techniques (e.g., frequency-based word substitution)
 
 ---
 
-## Submission Format
+### Dataset Creation
 
-Your final submission must be a CSV file with the following format:
+You must create your own dataset, containing paired sentences:
 
-```
-Original,Simplified
-The cardiovascular examination revealed arrhythmia.,The heart check-up showed an irregular heartbeat.
-The statute prohibits any such encroachment.,The law forbids such an intrusion.
-```
+* **Original**: the jargon-heavy source sentence.
+* **Simplified**: the rewritten plain-English version.
 
 **Requirements:**
 
-* The CSV must include exactly **two columns**: `Original` and `Simplified`.
-* All sentences must be in English.
+* Cover at least **three distinct domains** (e.g., medicine, law, tech).
+* Minimum **1,000 sentence pairs**.
+* Stored as a CSV with exactly two headers:
+
+  ```csv
+  Original,Simplified
+  ```
 
 ---
 
-## Evaluation Metric
+### Submission Format
 
-Submissions will be evaluated using the **BLEU score**, which measures how closely your simplified sentences match the expected simplified versions.
+Submit a CSV file named `submission.csv` containing your model’s simplified outputs on the test set:
 
----
-
-## Deliverables
-
-1. **Dataset** — Your own collected and simplified sentence pairs.
-2. **Submission CSV** — With the `Original` and `Simplified` columns for the test set.
-3. **Report (1–2 pages)** — Explaining your approach, data collection process, simplification strategy, and model design.
+```csv
+Original,Simplified
+The cardiovascular examination revealed arrhythmia.,The heart check-up showed an irregular heartbeat.
+The statute prohibits such encroachment.,The law forbids such intrusion.
+```
 
 ---
 
-## Resources (to guide your understanding, not exact solutions)
+### Evaluation Metric
 
-* Research Paper: [Text Simplification via Paraphrasing](https://arxiv.org/abs/1906.05885)
-* Research Paper: [A Neural Approach to Text Simplification](https://aclanthology.org/Q18-1042/)
-* YouTube Video: [Text Simplification with NLP](https://youtu.be/0V96wE7lY4w?si=qsHZTSLiAOX41mAh)
+Your submission will be evaluated using the **BLEU** metric against reference simplifications.
+
+---
+
+### Resources
+
+* **Research**: [SARI Metric for Text Simplification](https://nlpprogress.com/english/simplification.html) – Overview of text simplification metrics.
+
+---
+
+### Deliverables
+
+1. **Dataset** (`dataset.csv`) – `Original,Simplified` pairs.
+2. **`submission.csv`** – Simplified outputs for the test set.
+3. **Approach Report (1–2 pages)** – Must describe:
+
+   * Data collection method
+   * Non-neural approach chosen and why
+   * Challenges and lessons learned
