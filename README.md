@@ -99,8 +99,6 @@ These are suggested references to inspire your approach—not direct solutions:
 
 * **YouTube Tutorials**
 
-[Denoising Autoencoders | Deep Learning Animated](https://www.youtube.com/watch?v=0V96wE7lY4w&utm_source=chatgpt.com)
-
 [Image Denoising with Autoencoders (Brilliant tutorial)](https://www.youtube.com/watch?v=0V96wE7lY4w&utm_source=chatgpt.com)
 
 ---
