@@ -1,7 +1,3 @@
-Here’s **Challenge 3** rewritten in the same **standard style** as Challenge 1 & 2 so it fits into your recruitment challenge set.
-
----
-
 # Challenge 3 — Courtroom Clash: AI Lawyers Battle It Out! 🤖⚖️🔥
 
 ## Overview
@@ -118,7 +114,3 @@ Create a simple interface where:
 * **Objection Handling** — Allow users to interrupt AI responses.
 * **Lawyer Role Reversal** — Swap AI roles to test adaptability.
 * **Auto-Summarized Verdicts** — AI-generated courtroom-style rulings.
-
----
-
-Do you want me to now **combine Challenge 1, 2, and 3** into a single polished **Recruitment Challenge PDF/README** so they all have the same structure and styling? That would make it easier for participants to follow.
