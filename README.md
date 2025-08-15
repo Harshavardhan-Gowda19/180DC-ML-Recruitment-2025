@@ -39,4 +39,8 @@ You’ll complete **three challenges** testing your ML skills, creativity, and p
 ## 🙌 Good Luck!
 We’re excited to see your solutions — **all the best!** 🚀
 
+## And the POC's are:
+Harshavardhan: +91 6363725657
+Vishruth: +91 8660753633
+
 **– 180 DC ML SIG Team**
