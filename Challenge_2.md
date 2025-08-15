@@ -17,8 +17,8 @@ Design a **non–neural network** pipeline that:
 3. **Produces** a rewritten sentence in plain English without changing the original meaning.
 
 **Important Constraint:**
-🚫 You **cannot** use deep learning or neural network–based models (e.g., BERT, GPT, LSTMs, Transformers).
-✅ You **can** use:
+You **cannot** use deep learning or neural network–based models (e.g., BERT, GPT, LSTMs, Transformers).
+You **can** use:
 
 * Classical machine learning models (e.g., decision trees, SVMs, Naive Bayes)
 * Rule-based systems
