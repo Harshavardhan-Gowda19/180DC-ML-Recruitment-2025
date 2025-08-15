@@ -102,7 +102,7 @@ https://doi.org/10.48550/arXiv.1608.03981) – Zhang et al., 2017
 
 * **YouTube Video**
 
-  * [Image Denoising with Autoencoders]([https://www.youtube.com/watch?v=9z8o9vRX6xI](https://youtu.be/0V96wE7lY4w?si=qsHZTSLiAOX41mAh))
+  * [Image Denoising with Autoencoders]((https://youtu.be/0V96wE7lY4w?si=qsHZTSLiAOX41mAh))
 
 ---
 
